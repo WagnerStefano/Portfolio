@@ -368,11 +368,12 @@ nav ul li a{
   
  }
 
- .projects{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
+ .cards_container{
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+  
+  
  }
 
  .project_1{
@@ -382,12 +383,24 @@ nav ul li a{
   background: #101010;
   border-radius: 20px;
   margin: 15px;
+  flex-flow: row nowrap; /* mantem o conteu sem quebra, sempre que exceder o limite da pagina não ira quebrar para baixo mas criará uma sequencia com todos itens como uma linha continua*/
   position: relative;
-  overflow: hidden;
+  /*overflow: hidden;*/
   text-align: center;
  }
 
- .img_test{
+ .projects{ /*gallery*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  overflow-y: hidden; /*desativa a barra de scroll latera verical(y) horizontal(x)*/
+
+  
+ }
+
+
+ .Project_image{
   position: relative;
   overflow: hidden;
   width: 400px;
@@ -402,7 +415,7 @@ nav ul li a{
   padding: 100px;
  }
 
- .under{
+ .under{ /*txt under construction*/
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -410,3 +423,27 @@ nav ul li a{
   top: 25%;
  }
 
+ .arrow-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+ }
+ .arrow-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+ }
