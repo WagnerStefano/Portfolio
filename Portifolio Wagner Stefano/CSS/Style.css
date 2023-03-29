@@ -183,7 +183,7 @@ nav ul li a{
    justify-content: space-around;
  }
 
- button{
+ .button_1{/*estilização do button com configuração hover*/
    background-color: #f9004d;
    color: white;
    text-decoration: none;
@@ -193,7 +193,7 @@ nav ul li a{
    border-radius: 30px;
    transition: .4s;
  }
- button:hover{
+ .button_1:hover{/*estilização do button com configuração hover*/
    background-color: transparent;
    border: 2px solid #f9004d;
    cursor: pointer;
@@ -247,7 +247,7 @@ nav ul li a{
   transition: .4s;
  }
 
- .card .button{
+ .card .button_1{
    background-color: #f9004d;
    color: white;
    text-decoration: none;
@@ -258,7 +258,7 @@ nav ul li a{
    transition: .4s;
  }
 
- .card .button:hover{
+ .card .button_1:hover{
    background-color: transparent;
    border: 2px solid #f9004d;
    cursor: pointer;
