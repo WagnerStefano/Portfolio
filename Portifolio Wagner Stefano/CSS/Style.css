@@ -395,18 +395,22 @@ nav ul li a{
   align-items: center;
   min-height: 400px;
   overflow-y: hidden; /*desativa a barra de scroll latera verical(y) horizontal(x)*/
+ }
 
-  
+ .projects::-webkit-scrollbar{
+  display: none;
  }
 
 
  .Project_image{
+  flex-shrink: 0;
   position: relative;
   overflow: hidden;
   width: 400px;
   height: 400px;
   right: 45%;
   top: -10%;
+  opacity: 0.6;
  }
 
 
@@ -429,11 +433,12 @@ nav ul li a{
   left: 0;
   right: auto;
   bottom: 0;
-  font-size: 20px;
-  line-height: 250px;
   width: 40px;
-  text-align: center;
   cursor: pointer;
+    background: linear-gradient( to left, transparent 0%, #f9004d 150%);
+    color: white;
+    border: #f1487e;
+    border-radius: 30px;
  }
  .arrow-right{
   position: absolute;
@@ -441,9 +446,19 @@ nav ul li a{
   right: 0;
   left: auto;
   bottom: 0;
-  font-size: 20px;
-  line-height: 250px;
   width: 40px;
-  text-align: center;
   cursor: pointer;
+    background: linear-gradient( to right, transparent 0%, #f9004d 150%);
+    color: white;
+    border: #f1487e;
+    border-radius: 30px;
+ }
+ 
+ .arrow-left:hover{
+  transform: scale(1.1);
+  transition: .4s;
+ }
+ .arrow-right:hover{
+  transform: scale(1.1);
+  transition: .4s;
  }
